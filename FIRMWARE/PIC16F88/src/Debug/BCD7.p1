@@ -1,0 +1,498 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"164 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f88.h
+[s S7 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S7 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"163
+[u S6 `S7 1 ]
+[n S6 . . ]
+"175
+[v _PORTAbits `VS6 ~T0 @X0 0 e@5 ]
+"225
+[s S9 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S9 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"224
+[u S8 `S9 1 ]
+[n S8 . . ]
+"236
+[v _PORTBbits `VS8 ~T0 @X0 0 e@6 ]
+"21 ../BCD7.h
+[v _setBCDCharacterAux `(v ~T0 @X0 0 ef1`uc ]
+[v F974 `(v ~T0 @X0 1 tf1`ul ]
+"154 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic.h
+[v __delay `JF974 ~T0 @X0 0 e ]
+[p i __delay ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f88.h
+[; <" INDF equ 00h ;# ">
+"55
+[; <" TMR0 equ 01h ;# ">
+"61
+[; <" PCL equ 02h ;# ">
+"67
+[; <" STATUS equ 03h ;# ">
+"154
+[; <" FSR equ 04h ;# ">
+"160
+[; <" PORTA equ 05h ;# ">
+"221
+[; <" PORTB equ 06h ;# ">
+"282
+[; <" PCLATH equ 0Ah ;# ">
+"301
+[; <" INTCON equ 0Bh ;# ">
+"378
+[; <" PIR1 equ 0Ch ;# ">
+"433
+[; <" PIR2 equ 0Dh ;# ">
+"466
+[; <" TMR1 equ 0Eh ;# ">
+"472
+[; <" TMR1L equ 0Eh ;# ">
+"478
+[; <" TMR1H equ 0Fh ;# ">
+"484
+[; <" T1CON equ 010h ;# ">
+"555
+[; <" TMR2 equ 011h ;# ">
+"561
+[; <" T2CON equ 012h ;# ">
+"631
+[; <" SSPBUF equ 013h ;# ">
+"637
+[; <" SSPCON equ 014h ;# ">
+"706
+[; <" CCPR1 equ 015h ;# ">
+"712
+[; <" CCPR1L equ 015h ;# ">
+"718
+[; <" CCPR1H equ 016h ;# ">
+"724
+[; <" CCP1CON equ 017h ;# ">
+"781
+[; <" RCSTA equ 018h ;# ">
+"875
+[; <" TXREG equ 019h ;# ">
+"881
+[; <" RCREG equ 01Ah ;# ">
+"887
+[; <" ADRESH equ 01Eh ;# ">
+"893
+[; <" ADCON0 equ 01Fh ;# ">
+"988
+[; <" OPTION_REG equ 081h ;# ">
+"1057
+[; <" TRISA equ 085h ;# ">
+"1118
+[; <" TRISB equ 086h ;# ">
+"1179
+[; <" PIE1 equ 08Ch ;# ">
+"1234
+[; <" PIE2 equ 08Dh ;# ">
+"1267
+[; <" PCON equ 08Eh ;# ">
+"1300
+[; <" OSCCON equ 08Fh ;# ">
+"1370
+[; <" OSCTUNE equ 090h ;# ">
+"1427
+[; <" PR2 equ 092h ;# ">
+"1433
+[; <" SSPADD equ 093h ;# ">
+"1439
+[; <" SSPSTAT equ 094h ;# ">
+"1607
+[; <" TXSTA equ 098h ;# ">
+"1687
+[; <" SPBRG equ 099h ;# ">
+"1693
+[; <" ANSEL equ 09Bh ;# ">
+"1748
+[; <" CMCON equ 09Ch ;# ">
+"1817
+[; <" CVRCON equ 09Dh ;# ">
+"1881
+[; <" ADRESL equ 09Eh ;# ">
+"1887
+[; <" ADCON1 equ 09Fh ;# ">
+"1934
+[; <" WDTCON equ 0105h ;# ">
+"1991
+[; <" EEDATA equ 010Ch ;# ">
+"1997
+[; <" EEADR equ 010Dh ;# ">
+"2003
+[; <" EEDATH equ 010Eh ;# ">
+"2009
+[; <" EEADRH equ 010Fh ;# ">
+"2015
+[; <" EECON1 equ 018Ch ;# ">
+"2065
+[; <" EECON2 equ 018Dh ;# ">
+"8 ../config.h
+[p x FOSC=XT ]
+"9
+[p x WDTE=OFF ]
+"10
+[p x PWRTE=ON ]
+"11
+[p x MCLRE=ON ]
+"12
+[p x BOREN=ON ]
+"13
+[p x LVP=OFF ]
+"14
+[p x CPD=OFF ]
+"15
+[p x WRT=OFF ]
+"16
+[p x CCPMX=RB0 ]
+"17
+[p x CP=OFF ]
+"20
+[p x FCMEN=OFF ]
+"21
+[p x IESO=OFF ]
+"9 ../BCD7.c
+[v _SEGMENT_MAP `Cui ~T0 @X0 -> 70 `i e ]
+[i _SEGMENT_MAP
+:U ..
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+"10
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+"11
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+"12
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+"13
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+"14
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+"15
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+"16
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+"17
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+"18
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 0 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+-> -> 1 `i `ui
+..
+]
+"20
+[v _getBCDByteBitForNumber `(i ~T0 @X0 1 ef2`i`i ]
+{
+[e :U _getBCDByteBitForNumber ]
+[v _b `i ~T0 @X0 1 r1 ]
+[v _number `i ~T0 @X0 1 r2 ]
+[f ]
+"21
+[v _row `i ~T0 @X0 1 a ]
+[e = _row * -> 7 `i _number ]
+"22
+[v _id `i ~T0 @X0 1 a ]
+[e = _id - + _row -> 6 `i _b ]
+"23
+[e ) -> *U + &U _SEGMENT_MAP * -> -> _id `ui `ux -> -> # *U &U _SEGMENT_MAP `ui `ux `i ]
+[e $UE 93  ]
+"24
+[e :UE 93 ]
+}
+"25
+[v _setBCDCharacterNumber `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _setBCDCharacterNumber ]
+[v _num `i ~T0 @X0 1 r1 ]
+[f ]
+"26
+[e = . . _PORTAbits 0 0 -> ( _getBCDByteBitForNumber (2 , -> 0 `i _num `uc ]
+"27
+[e = . . _PORTAbits 0 1 -> ( _getBCDByteBitForNumber (2 , -> 1 `i _num `uc ]
+"28
+[e = . . _PORTBbits 0 0 -> ( _getBCDByteBitForNumber (2 , -> 2 `i _num `uc ]
+"29
+[e = . . _PORTBbits 0 1 -> ( _getBCDByteBitForNumber (2 , -> 3 `i _num `uc ]
+"30
+[e = . . _PORTBbits 0 2 -> ( _getBCDByteBitForNumber (2 , -> 4 `i _num `uc ]
+"31
+[e = . . _PORTBbits 0 3 -> ( _getBCDByteBitForNumber (2 , -> 5 `i _num `uc ]
+"32
+[e = . . _PORTBbits 0 4 -> ( _getBCDByteBitForNumber (2 , -> 6 `i _num `uc ]
+"33
+[e :UE 94 ]
+}
+"36
+[v _clearBCD `(v ~T0 @X0 1 ef ]
+{
+[e :U _clearBCD ]
+[f ]
+"37
+[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+"38
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
+"39
+[e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
+"40
+[e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
+"41
+[e = . . _PORTBbits 0 2 -> -> 0 `i `uc ]
+"42
+[e = . . _PORTBbits 0 3 -> -> 0 `i `uc ]
+"43
+[e = . . _PORTBbits 0 4 -> -> 0 `i `uc ]
+"44
+[e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
+"45
+[e :UE 95 ]
+}
+"46
+[v _setBCDCharacter `(v ~T0 @X0 1 ef2`*uc`i ]
+{
+[e :U _setBCDCharacter ]
+[v _stringpointer `*uc ~T0 @X0 1 r1 ]
+[v _numberOfBCD `i ~T0 @X0 1 r2 ]
+[f ]
+"49
+[v _currentBCD `i ~T0 @X0 1 a ]
+[e = _currentBCD -> 0 `i ]
+"50
+[v _numberOfBCD_TMP `i ~T0 @X0 1 a ]
+[e = _numberOfBCD_TMP _numberOfBCD ]
+"51
+{
+[v _n `i ~T0 @X0 1 a ]
+[e = _n -> 0 `i ]
+[e $U 100  ]
+[e :U 97 ]
+{
+"52
+[v _currentChar `uc ~T0 @X0 1 a ]
+[e = _currentChar *U + _stringpointer * -> _n `x -> -> # *U _stringpointer `i `x ]
+"53
+[e $ ! != -> *U + _stringpointer * -> _n `x -> -> # *U _stringpointer `i `x `ui -> 46 `ui 101  ]
+{
+"54
+[e $ ! == _currentBCD -> 0 `i 102  ]
+{
+"55
+[e ++ _currentBCD -> 1 `i ]
+"57
+[e ( _clearBCD ..  ]
+"58
+[e = . . _PORTAbits 0 4 -> -> 0 `i `uc ]
+"59
+[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
+"61
+[e ( _setBCDCharacterAux (1 *U + _stringpointer * -> _n `x -> -> # *U _stringpointer `i `x ]
+"62
+[e $ ! == -> *U + _stringpointer * -> + _n -> 1 `i `x -> -> # *U _stringpointer `i `x `ui -> 46 `ui 103  ]
+{
+"63
+[e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
+"64
+[e ++ _numberOfBCD_TMP -> 1 `i ]
+"65
+}
+[e :U 103 ]
+"67
+[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"68
+}
+[e $U 104  ]
+[e :U 102 ]
+[e $ ! == _currentBCD -> 1 `i 105  ]
+{
+"69
+[e ++ _currentBCD -> 1 `i ]
+"71
+[e ( _clearBCD ..  ]
+"72
+[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
+"73
+[e = . . _PORTAbits 0 4 -> -> 1 `i `uc ]
+"75
+[e ( _setBCDCharacterAux (1 *U + _stringpointer * -> _n `x -> -> # *U _stringpointer `i `x ]
+"76
+[e $ ! == -> *U + _stringpointer * -> + _n -> 1 `i `x -> -> # *U _stringpointer `i `x `ui -> 46 `ui 106  ]
+{
+"77
+[e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
+"78
+[e ++ _numberOfBCD_TMP -> 1 `i ]
+"79
+}
+[e :U 106 ]
+"82
+}
+[e :U 105 ]
+"83
+[e :U 104 ]
+}
+[e :U 101 ]
+"84
+}
+"51
+[e ++ _n -> 1 `i ]
+[e :U 100 ]
+[e $ < _n _numberOfBCD_TMP 97  ]
+[e :U 98 ]
+"84
+}
+"87
+[e :UE 96 ]
+}
+"88
+[v _setBCDCharacterAux `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _setBCDCharacterAux ]
+[v _character `uc ~T0 @X0 1 r1 ]
+[f ]
+"89
+[e $ ! == -> _character `ui -> 48 `ui 108  ]
+{
+"90
+[e ( _setBCDCharacterNumber (1 -> 0 `i ]
+"91
+}
+[e $U 109  ]
+[e :U 108 ]
+[e $ ! == -> _character `ui -> 49 `ui 110  ]
+{
+"92
+[e ( _setBCDCharacterNumber (1 -> 1 `i ]
+"93
+}
+[e $U 111  ]
+[e :U 110 ]
+[e $ ! == -> _character `ui -> 50 `ui 112  ]
+{
+"94
+[e ( _setBCDCharacterNumber (1 -> 2 `i ]
+"95
+}
+[e $U 113  ]
+[e :U 112 ]
+[e $ ! == -> _character `ui -> 51 `ui 114  ]
+{
+"96
+[e ( _setBCDCharacterNumber (1 -> 3 `i ]
+"97
+}
+[e $U 115  ]
+[e :U 114 ]
+[e $ ! == -> _character `ui -> 52 `ui 116  ]
+{
+"98
+[e ( _setBCDCharacterNumber (1 -> 4 `i ]
+"99
+}
+[e $U 117  ]
+[e :U 116 ]
+[e $ ! == -> _character `ui -> 53 `ui 118  ]
+{
+"100
+[e ( _setBCDCharacterNumber (1 -> 5 `i ]
+"101
+}
+[e $U 119  ]
+[e :U 118 ]
+[e $ ! == -> _character `ui -> 54 `ui 120  ]
+{
+"102
+[e ( _setBCDCharacterNumber (1 -> 6 `i ]
+"103
+}
+[e $U 121  ]
+[e :U 120 ]
+[e $ ! == -> _character `ui -> 55 `ui 122  ]
+{
+"104
+[e ( _setBCDCharacterNumber (1 -> 7 `i ]
+"105
+}
+[e $U 123  ]
+[e :U 122 ]
+[e $ ! == -> _character `ui -> 56 `ui 124  ]
+{
+"106
+[e ( _setBCDCharacterNumber (1 -> 8 `i ]
+"107
+}
+[e $U 125  ]
+[e :U 124 ]
+[e $ ! == -> _character `ui -> 57 `ui 126  ]
+{
+"108
+[e ( _setBCDCharacterNumber (1 -> 9 `i ]
+"109
+}
+[e :U 126 ]
+"110
+[e :U 125 ]
+[e :U 123 ]
+[e :U 121 ]
+[e :U 119 ]
+[e :U 117 ]
+[e :U 115 ]
+[e :U 113 ]
+[e :U 111 ]
+[e :U 109 ]
+[e :UE 107 ]
+}

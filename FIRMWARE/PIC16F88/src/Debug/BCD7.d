@@ -1,0 +1,1 @@
+ BCD7.d  BCD7.p1:  ../BCD7.c ../BCD7.h ../config.h

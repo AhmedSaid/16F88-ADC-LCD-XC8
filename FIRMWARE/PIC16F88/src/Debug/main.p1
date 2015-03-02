@@ -1,0 +1,395 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"1691 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f88.h
+[v _ANSEL `Vuc ~T0 @X0 0 e@155 ]
+"1885
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"1891
+[s S82 :4 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S82 . . VCFG ADCS2 ADFM ]
+"1897
+[s S83 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S83 . . VCFG0 VCFG1 ]
+"1890
+[u S81 `S82 1 `S83 1 ]
+[n S81 . . . ]
+"1903
+[v _ADCON1bits `VS81 ~T0 @X0 0 e@159 ]
+"897
+[s S37 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :2 `uc 1 ]
+[n S37 . ADON . GO_nDONE CHS ADCS ]
+"904
+[s S38 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S38 . . GO CHS0 CHS1 CHS2 ADCS0 ADCS1 ]
+"913
+[s S39 :2 `uc 1 :1 `uc 1 ]
+[n S39 . . nDONE ]
+"917
+[s S40 :2 `uc 1 :1 `uc 1 ]
+[n S40 . . GO_DONE ]
+"896
+[u S36 `S37 1 `S38 1 `S39 1 `S40 1 ]
+[n S36 . . . . . ]
+"922
+[v _ADCON0bits `VS36 ~T0 @X0 0 e@31 ]
+[v F974 `(v ~T0 @X0 1 tf1`ul ]
+"154 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic.h
+[v __delay `JF974 ~T0 @X0 0 e ]
+[p i __delay ]
+"1879 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f88.h
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+"885
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+[p mainexit ]
+"1304
+[s S56 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S56 . SCS IOFS OSTS IRCF ]
+"1310
+[s S57 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S57 . SCS0 SCS1 . IRCF0 IRCF1 IRCF2 ]
+"1303
+[u S55 `S56 1 `S57 1 ]
+[n S55 . . . ]
+"1319
+[v _OSCCONbits `VS55 ~T0 @X0 0 e@143 ]
+"158
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"1061
+[s S45 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S45 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"1060
+[u S44 `S45 1 ]
+[n S44 . . ]
+"1072
+[v _TRISAbits `VS44 ~T0 @X0 0 e@133 ]
+"219
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1122
+[s S47 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S47 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"1121
+[u S46 `S47 1 ]
+[n S46 . . ]
+"1133
+[v _TRISBbits `VS46 ~T0 @X0 0 e@134 ]
+"164
+[s S7 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S7 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"163
+[u S6 `S7 1 ]
+[n S6 . . ]
+"175
+[v _PORTAbits `VS6 ~T0 @X0 0 e@5 ]
+"225
+[s S9 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S9 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"224
+[u S8 `S9 1 ]
+[n S8 . . ]
+"236
+[v _PORTBbits `VS8 ~T0 @X0 0 e@6 ]
+"20 ../BCD7.h
+[v _setBCDCharacter `(v ~T0 @X0 0 ef2`*uc`i ]
+"112 C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdlib.h
+[v _ftoa `(*uc ~T0 @X0 0 ef2`f`*i ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f88.h
+[; <" INDF equ 00h ;# ">
+"55
+[; <" TMR0 equ 01h ;# ">
+"61
+[; <" PCL equ 02h ;# ">
+"67
+[; <" STATUS equ 03h ;# ">
+"154
+[; <" FSR equ 04h ;# ">
+"160
+[; <" PORTA equ 05h ;# ">
+"221
+[; <" PORTB equ 06h ;# ">
+"282
+[; <" PCLATH equ 0Ah ;# ">
+"301
+[; <" INTCON equ 0Bh ;# ">
+"378
+[; <" PIR1 equ 0Ch ;# ">
+"433
+[; <" PIR2 equ 0Dh ;# ">
+"466
+[; <" TMR1 equ 0Eh ;# ">
+"472
+[; <" TMR1L equ 0Eh ;# ">
+"478
+[; <" TMR1H equ 0Fh ;# ">
+"484
+[; <" T1CON equ 010h ;# ">
+"555
+[; <" TMR2 equ 011h ;# ">
+"561
+[; <" T2CON equ 012h ;# ">
+"631
+[; <" SSPBUF equ 013h ;# ">
+"637
+[; <" SSPCON equ 014h ;# ">
+"706
+[; <" CCPR1 equ 015h ;# ">
+"712
+[; <" CCPR1L equ 015h ;# ">
+"718
+[; <" CCPR1H equ 016h ;# ">
+"724
+[; <" CCP1CON equ 017h ;# ">
+"781
+[; <" RCSTA equ 018h ;# ">
+"875
+[; <" TXREG equ 019h ;# ">
+"881
+[; <" RCREG equ 01Ah ;# ">
+"887
+[; <" ADRESH equ 01Eh ;# ">
+"893
+[; <" ADCON0 equ 01Fh ;# ">
+"988
+[; <" OPTION_REG equ 081h ;# ">
+"1057
+[; <" TRISA equ 085h ;# ">
+"1118
+[; <" TRISB equ 086h ;# ">
+"1179
+[; <" PIE1 equ 08Ch ;# ">
+"1234
+[; <" PIE2 equ 08Dh ;# ">
+"1267
+[; <" PCON equ 08Eh ;# ">
+"1300
+[; <" OSCCON equ 08Fh ;# ">
+"1370
+[; <" OSCTUNE equ 090h ;# ">
+"1427
+[; <" PR2 equ 092h ;# ">
+"1433
+[; <" SSPADD equ 093h ;# ">
+"1439
+[; <" SSPSTAT equ 094h ;# ">
+"1607
+[; <" TXSTA equ 098h ;# ">
+"1687
+[; <" SPBRG equ 099h ;# ">
+"1693
+[; <" ANSEL equ 09Bh ;# ">
+"1748
+[; <" CMCON equ 09Ch ;# ">
+"1817
+[; <" CVRCON equ 09Dh ;# ">
+"1881
+[; <" ADRESL equ 09Eh ;# ">
+"1887
+[; <" ADCON1 equ 09Fh ;# ">
+"1934
+[; <" WDTCON equ 0105h ;# ">
+"1991
+[; <" EEDATA equ 010Ch ;# ">
+"1997
+[; <" EEADR equ 010Dh ;# ">
+"2003
+[; <" EEDATH equ 010Eh ;# ">
+"2009
+[; <" EEADRH equ 010Fh ;# ">
+"2015
+[; <" EECON1 equ 018Ch ;# ">
+"2065
+[; <" EECON2 equ 018Dh ;# ">
+"8 ../config.h
+[p x FOSC=XT ]
+"9
+[p x WDTE=OFF ]
+"10
+[p x PWRTE=ON ]
+"11
+[p x MCLRE=ON ]
+"12
+[p x BOREN=ON ]
+"13
+[p x LVP=OFF ]
+"14
+[p x CPD=OFF ]
+"15
+[p x WRT=OFF ]
+"16
+[p x CCPMX=RB0 ]
+"17
+[p x CP=OFF ]
+"20
+[p x FCMEN=OFF ]
+"21
+[p x IESO=OFF ]
+"11 ../main.c
+[v _initADC `(v ~T0 @X0 1 ef ]
+{
+[e :U _initADC ]
+[f ]
+"75
+[e = _ANSEL -> -> 8 `i `uc ]
+"78
+[e = _ADCON1 -> -> 0 `i `uc ]
+"81
+[e = . . _ADCON1bits 0 3 -> -> 1 `i `uc ]
+"84
+[e = . . _ADCON0bits 1 2 -> -> 1 `i `uc ]
+"85
+[e = . . _ADCON0bits 1 3 -> -> 1 `i `uc ]
+"86
+[e = . . _ADCON0bits 1 4 -> -> 0 `i `uc ]
+"89
+[e = . . _ADCON0bits 1 5 -> -> 0 `i `uc ]
+"90
+[e = . . _ADCON0bits 1 6 -> -> 0 `i `uc ]
+"93
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"96
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+"101
+[e :UE 93 ]
+}
+"102
+[v _initADCConversion `(v ~T0 @X0 1 ef ]
+{
+[e :U _initADCConversion ]
+[f ]
+"103
+[e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
+"104
+[e :UE 94 ]
+}
+"105
+[v _isADCConversionReady `(i ~T0 @X0 1 ef ]
+{
+[e :U _isADCConversionReady ]
+[f ]
+"106
+[e $ ! == -> . . _ADCON0bits 3 1 `i -> 0 `i 96  ]
+[e ) -> 1 `i ]
+[e $UE 95  ]
+[e :U 96 ]
+"107
+[e ) -> 0 `i ]
+[e $UE 95  ]
+"108
+[e :UE 95 ]
+}
+"110
+[v _getADC10bitResult `(i ~T0 @X0 1 ef ]
+{
+[e :U _getADC10bitResult ]
+[f ]
+"111
+[v _adresl `uc ~T0 @X0 1 a ]
+[e = _adresl _ADRESL ]
+"112
+[v _adresh `uc ~T0 @X0 1 a ]
+[e = _adresh _ADRESH ]
+"114
+[v _result `i ~T0 @X0 1 a ]
+[e = _result -> + * -> _ADRESH `l -> 256 `l -> _ADRESL `l `i ]
+"115
+[e ) _result ]
+[e $UE 97  ]
+"116
+[e :UE 97 ]
+}
+"122
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"124
+[e = . . _OSCCONbits 0 3 -> -> 7 `i `uc ]
+"128
+[e = _PORTA -> -> 0 `i `uc ]
+"129
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
+"130
+[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
+"131
+[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
+"132
+[e = . . _TRISAbits 0 3 -> -> 1 `i `uc ]
+"133
+[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
+"134
+[e = . . _TRISAbits 0 5 -> -> 1 `i `uc ]
+"135
+[e = . . _TRISAbits 0 6 -> -> 1 `i `uc ]
+"136
+[e = . . _TRISAbits 0 7 -> -> 1 `i `uc ]
+"138
+[e = _PORTB -> -> 0 `i `uc ]
+"140
+[e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
+"141
+[e = . . _TRISBbits 0 1 -> -> 0 `i `uc ]
+"142
+[e = . . _TRISBbits 0 2 -> -> 0 `i `uc ]
+"143
+[e = . . _TRISBbits 0 3 -> -> 0 `i `uc ]
+"144
+[e = . . _TRISBbits 0 4 -> -> 0 `i `uc ]
+"145
+[e = . . _TRISBbits 0 5 -> -> 0 `i `uc ]
+"150
+[e ( _initADC ..  ]
+"152
+[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+"153
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"154
+[e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
+"155
+[e = . . _PORTBbits 0 1 -> -> 1 `i `uc ]
+"156
+[e = . . _PORTBbits 0 2 -> -> 1 `i `uc ]
+"157
+[e = . . _PORTBbits 0 3 -> -> 1 `i `uc ]
+"158
+[e = . . _PORTBbits 0 4 -> -> 1 `i `uc ]
+"159
+[e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
+"163
+[e :U 100 ]
+{
+"165
+[e ( _initADCConversion ..  ]
+"166
+[e $U 102  ]
+[e :U 103 ]
+{
+"168
+}
+[e :U 102 ]
+"166
+[e $ == ( _isADCConversionReady ..  -> 0 `i 103  ]
+[e :U 104 ]
+"169
+[v _result `i ~T0 @X0 1 a ]
+[e = _result ( _getADC10bitResult ..  ]
+"172
+[v _minValue `f ~T0 @X0 1 a ]
+[e = _minValue -> .0.0 `f ]
+"173
+[v _maxValue `f ~T0 @X0 1 a ]
+[e = _maxValue -> .5.0 `f ]
+"174
+[v _unitValue `f ~T0 @X0 1 a ]
+[e = _unitValue / - _maxValue _minValue -> -> 1024 `i `f ]
+"177
+[v _currentValue `f ~T0 @X0 1 a ]
+[e = _currentValue * -> _result `f _unitValue ]
+"179
+[e ( _setBCDCharacter (2 , ( _ftoa (2 , _currentValue -> -> 0 `i `*i -> 2 `i ]
+"180
+}
+[e :U 99 ]
+"163
+[e $U 100  ]
+[e :U 101 ]
+"182
+[e :UE 98 ]
+}
